@@ -74,7 +74,7 @@ func NewDeskManager() *DeskManager {
 }
 
 func (dm *DeskManager) AfterInit() {
-	nano.OnSessionClosed(func(s *session.Session) {
+	session.Lifetime.OnClosed(func(s *session.Session) {
 		// Fixed: 玩家WIFI切换到4G网络不断开, 重连时，将UID设置为illegalSessionUid
 		if s.UID() > 0 {
 			if err := dm.onPlayerDisconnect(s); err != nil {

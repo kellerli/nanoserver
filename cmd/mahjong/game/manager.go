@@ -42,7 +42,7 @@ func NewManager() *Manager {
 }
 
 func (m *Manager) AfterInit() {
-	nano.OnSessionClosed(func(s *session.Session) {
+	session.Lifetime.OnClosed(func(s *session.Session) {
 		m.group.Leave(s)
 	})
 
