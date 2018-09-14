@@ -13,12 +13,12 @@ import (
 	"github.com/lonnng/nanoserver/internal/types"
 
 	"errors"
-	"github.com/chanxuehong/wechat.v2/open/oauth2"
 	"github.com/gorilla/mux"
+	"github.com/lonnng/nanoserver/db/model"
 	"github.com/lonnng/nex"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
-	"github.com/lonnng/nanoserver/db/model"
+	"gopkg.in/chanxuehong/wechat.v2/open/oauth2"
 )
 
 var (

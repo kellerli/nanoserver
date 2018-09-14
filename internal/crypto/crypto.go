@@ -11,8 +11,8 @@ import (
 	"io/ioutil"
 
 	"crypto/md5"
-	"golang.org/x/crypto/pkcs12"
 	"github.com/lonnng/nanoserver/internal/errutil"
+	"golang.org/x/crypto/pkcs12"
 )
 
 func ParsePrivateKey(data []byte) (*rsa.PrivateKey, error) {

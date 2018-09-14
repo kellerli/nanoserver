@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
-	log "github.com/sirupsen/logrus"
 	"github.com/garyburd/redigo/redis"
+	log "github.com/sirupsen/logrus"
 
 	"github.com/lonnng/nanoserver/internal/errutil"
 )

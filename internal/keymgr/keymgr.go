@@ -8,9 +8,9 @@ import (
 	"sync"
 
 	"github.com/go-kit/kit/log"
+	"github.com/lonnng/nanoserver/db"
 	"github.com/lonnng/nanoserver/internal/algoutil"
 	"github.com/lonnng/nanoserver/internal/errutil"
-	"github.com/lonnng/nanoserver/db"
 )
 
 //KeyPair a rsa key pair

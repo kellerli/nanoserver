@@ -3,8 +3,8 @@ package game
 import (
 	"github.com/lonnng/nanoserver/internal/protocol"
 
-	"github.com/lonnng/nanoserver/internal/async"
 	"github.com/lonnng/nanoserver/db"
+	"github.com/lonnng/nanoserver/internal/async"
 
 	"github.com/lonnng/nano/component"
 	"github.com/lonnng/nano/session"

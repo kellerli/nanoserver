@@ -8,11 +8,11 @@ import (
 
 	kithttp "github.com/go-kit/kit/transport/http"
 	"github.com/gorilla/mux"
-	"golang.org/x/net/context"
 	"github.com/lonnng/nanoserver/internal/cache"
 	"github.com/lonnng/nanoserver/internal/encoding"
 	"github.com/lonnng/nanoserver/internal/errutil"
 	"github.com/lonnng/nanoserver/internal/protocol"
+	"golang.org/x/net/context"
 )
 
 func MakeHandler(ctx context.Context, s Service) http.Handler {

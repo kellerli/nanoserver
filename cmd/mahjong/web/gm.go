@@ -7,13 +7,13 @@ import (
 	"time"
 
 	"errors"
-	"github.com/lonnng/nex"
-	log "github.com/sirupsen/logrus"
 	"github.com/lonnng/nanoserver/cmd/mahjong/game"
 	"github.com/lonnng/nanoserver/cmd/mahjong/web/service/login"
-	"github.com/lonnng/nanoserver/internal/errutil"
 	"github.com/lonnng/nanoserver/db"
+	"github.com/lonnng/nanoserver/internal/errutil"
 	"github.com/lonnng/nanoserver/internal/protocol"
+	"github.com/lonnng/nex"
+	log "github.com/sirupsen/logrus"
 )
 
 func authFilter(_ context.Context, r *http.Request) (context.Context, error) {
